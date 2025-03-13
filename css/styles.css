@@ -43,6 +43,7 @@ ul,
 ol {
   margin: 0;
   list-style: none;
+  padding-inline-start: 0px;
 }
 a {
   text-decoration: none;
@@ -51,8 +52,9 @@ button {
   cursor: pointer;
 }
 .container {
-  width: 1440px;
-  margin: 0 0;
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 0;
 }
 img {
   max-width: 100%;
@@ -63,6 +65,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-bottom: 1px solid var(--cornflower);
 }
 .container .header-nav {
   display: flex;
@@ -333,6 +336,7 @@ img {
   background: #2e2f42;
   padding: 100px 0;
 }
+
 .footer-logo {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
