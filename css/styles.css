@@ -24,7 +24,7 @@
 }
 body {
   color: #434455;
-  font-family: "Roboto", sans-serif;
+  font-family: var(--font-family);
   background-color: #ffffff;
   margin: 0;
 }
@@ -83,34 +83,6 @@ img {
   align-items: center;
   gap: 40px;
   margin-right: 332px;
-  padding: 24px 0;
-}
-.header-address .header-contacts {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-.header-nav .header-logo {
-  line-height: 1.5;
-  margin-right: 76px;
-}
-.header-address .link {
-  line-height: 1.5;
-  color: #434455;
-  font-weight: 400;
-  font-size: 16px;
-  letter-spacing: 0.02em;
-  line-height: 1.5;
-  color: #434455;
-  text-transform: lowercase;
-  padding: 24px 0;
-}
-.header-address {
-  font-style: normal;
-}
-.header-address .link:hover,
-.header-address .link:focus {
-  color: #404bbf;
 }
 .header-logo {
   font-family: "Raleway", sans-serif;
@@ -125,15 +97,44 @@ img {
 .header-logo span {
   color: #2e2f42;
 }
-.page-header .link {
+.header-menu .nav-item {
+  display: block;
+  padding: 24px 0;
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.02em;
   color: #2e2f42;
   text-decoration: none;
 }
-.page-header .link:hover,
-.page-header .link:focus {
+.header-menu .nav-item:hover,
+.header-menu .nav-item:focus {
+  color: #404bbf;
+}
+.header-address .header-contacts {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+.header-nav .header-logo {
+  line-height: 1.5;
+  margin-right: 76px;
+}
+.header-address .contact-item {
+  line-height: 1.5;
+  color: #434455;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: 0.02em;
+  line-height: 1.5;
+  color: #434455;
+  text-transform: lowercase;
+  padding: 24px 0;
+}
+.header-address {
+  font-style: normal;
+}
+.header-address .contact-item:hover,
+.header-address .contact-item:focus {
   color: #404bbf;
 }
 /* #endregion header */
@@ -186,19 +187,13 @@ img {
 }
 .visually-hidden {
   position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
+  display: none;
 }
 .benefits .container {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   gap: 24px;
 }
 .container .benefits-list {
