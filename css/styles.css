@@ -140,7 +140,6 @@ img {
 /* #endregion header */
 /* #region hero */
 .hero {
-  display: block;
   padding: 188px 0;
   background: #2e2f42;
 }
@@ -152,16 +151,11 @@ img {
   text-align: center;
   color: #fff;
   max-width: 496px;
-}
-.hero .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero .btn-order-service {
   display: block;
-  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -170,11 +164,12 @@ img {
   border-radius: 4px;
   padding: 16px 32px;
   height: 56px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: #4d5ae5;
   margin-top: 48px;
   min-width: 169px;
   border: none;
+  margin-left: auto;
+  margin-right: auto;
 }
 .hero .btn-order-service:hover,
 .hero .btn-order-service:focus {
@@ -187,14 +182,15 @@ img {
 }
 .visually-hidden {
   position: absolute;
-  display: none;
-}
-.benefits .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  gap: 24px;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 .container .benefits-list {
   display: flex;
@@ -230,12 +226,6 @@ img {
   background: var(--cloud);
   padding: 120px 0;
 }
-.our-team .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 .team-title {
   font-weight: 700;
   font-size: 36px;
@@ -253,7 +243,6 @@ img {
 }
 .team-item {
   border-radius: 0 0 4px 4px;
-  padding: 0px 0px 32px 0px;
   width: 264px;
   height: 380px;
   background-color: #ffffff;
@@ -284,12 +273,6 @@ img {
 .portfolio {
   padding: 120px 0;
 }
-.portfolio .container {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
 .container .portfolio-list {
   display: flex;
   align-items: center;
@@ -299,16 +282,13 @@ img {
   row-gap: 48px;
 }
 .portfolio-item {
-  box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
-    0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
   background: var(--white);
   height: 420px;
   width: calc((100% - 48px) / 3);
 }
 .portfolio-item .item-name {
   padding: 32px 16px;
-  border: 1px solid #e7e9fc;
-  border-top: none;
+  border-bottom: 1px solid #e7e9fc;
 }
 .portfolio-title {
   font-weight: 700;
